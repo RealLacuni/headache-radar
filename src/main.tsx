@@ -3,6 +3,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+
 import Root from "./routes/Root.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
 
