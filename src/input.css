@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Montserrat:ital@0;1&family=Open+Sans:wght@300&family=Roboto:wght@100;400&family=Tilt+Prism&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Path: src\output.css */

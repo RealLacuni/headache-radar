@@ -6,6 +6,7 @@ import {
 
 import Root from "./routes/Root.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
+import Home from "./routes/Home.tsx";
 
 const router = createBrowserRouter([
     {
@@ -14,8 +15,8 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage/>,
         children: [
             {
-                path: "child/",
-                element: <h1>Home</h1>,
+                index: true,
+                element: <Home/>,
             }
         ]
     }
