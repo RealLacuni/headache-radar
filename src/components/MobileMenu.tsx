@@ -12,10 +12,7 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
 
     const toggleOpen = () => {
         const menu = document.getElementById("hamburger-menu") as HTMLElement;
-        menu.classList.toggle("bg-primary-800");
-        setTimeout(() => {
-            menu.classList.toggle("bg-primary-800");
-        }, 1000);
+        menu.classList.toggle("bg-gradient-radial");
 
         setOpen(!open);
     }
@@ -38,16 +35,16 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
             <div className={"hidden lg:block"}>
                 {pages.map((page: string) => {
                     return (
-                        <Link to={`/${page.toLowerCase()}`} key={page}
-                              className="px-4 py-2 text-primary-200 text-sm hover:bg-slate-600 hover:text-white"
-                              state={{page: page}}>
+                        <Link to={`/${page.toLowerCase()}`} key={page} id={page}
+                              className="px-6 text-primary-200 text-2xl hover:bg-slate-600 hover:rounded-bl-md hover:rounded-br-md hover:text-white">
+                            {page == "" ? "Home" : page}
                         </Link>
                     )
                 })}
             </div>
 
             <div className={"lg:hidden"}>
-                <Bars3Icon id="hamburger-menu" className="h-8 w-8 text-primary-200 hover:text-white"
+                <Bars3Icon id="hamburger-menu" className="h-8 w-8 text-primary-200 hover:text-white rounded-full from-60% from-primary-600"
                            onClick={toggleOpen}/>
             </div>
             {open && (
