@@ -7,6 +7,7 @@ import {
 import Root from "./routes/Root.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
 import Home from "./routes/Home.tsx";
+import Forecast from "./routes/Forecast.tsx";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/forecast",
-                element: <div>Forecast</div>,
+                element: <Forecast/>,
             },
             {
                 path: "/account",
