@@ -9,7 +9,7 @@ export const Nav = () => {
         setCurrentPage("Home");
     }
     return (
-        <section className="flex justify-between p-2 h-12 text-xl">
+        <header className="flex justify-between p-2 mb-1 h-12 text-xl">
             <div>
                 Logo here
             </div>
@@ -17,6 +17,6 @@ export const Nav = () => {
                 {currentPage}
             </div>
             <MobileMenu currentPage={currentPage} setCurrentPage={setCurrentPage}/>
-        </section>
+        </header>
     )
 }

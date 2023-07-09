@@ -36,7 +36,7 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
                 {pages.map((page: string) => {
                     return (
                         <Link to={`/${page.toLowerCase()}`} key={page} id={page}
-                              className="px-6 text-primary-200 text-2xl hover:bg-slate-600 hover:rounded-bl-md hover:rounded-br-md hover:text-white">
+                              className="px-6 text-primary-200 text-2xl hover:bg-slate-600 hover:rounded-bl-md hover:rounded-t-sm hover:rounded-br-md hover:text-white">
                             {page == "" ? "Home" : page}
                         </Link>
                     )

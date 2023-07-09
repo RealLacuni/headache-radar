@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-   content: ["./src/**/*.{html,js,ts,tsx}"],
+    mode: 'jit',
+   content: ["./src/**/*.{html,ts,tsx}"],
    theme: {
        extend: {
            backgroundImage: {
@@ -51,33 +52,9 @@ module.exports = {
                    800: '#87105F',
                    900: '#6C0A45',
                },
-               complementary1: {
-                   50: '#FFE9EC',
-                   100: '#FFBDC2',
-                   200: '#FF8F94',
-                   300: '#E31D53',
-                   400: '#C61748',
-                   500: '#A9123C',
-                   600: '#8F0E30',
-                   700: '#770B25',
-                   800: '#5E0819',
-                   900: '#46050E',
-               },
-               complementary3: {
-                   50: '#FFF7E6',
-                   100: '#FFE8B8',
-                   200: '#FFD787',
-                   300: '#E3A61D',
-                   400: '#C9971B',
-                   500: '#AD8818',
-                   600: '#927917',
-                   700: '#776A15',
-                   800: '#5C5C13',
-                   900: '#41440B',
-               },
            },
        }
    },
-   plugins: [],
+   plugins: [require('@tailwindcss/forms')],
 };
 
