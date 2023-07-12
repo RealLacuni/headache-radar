@@ -23,9 +23,11 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
 
         if (path === "") {
             props.setCurrentPage("Home");
+            toggleOpen();
             navigate("/");
         } else {
             props.setCurrentPage(path[0].toUpperCase() + path.slice(1));
+            toggleOpen();
             navigate(path);
         }
     }
