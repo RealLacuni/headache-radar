@@ -1,5 +1,4 @@
-import {Link} from "react-router-dom";
-import Card from "./Card.tsx";
+import FeatureCards from "./FeatureCards.tsx";
 
 
 const Hero = () => {
@@ -22,22 +21,8 @@ const Hero = () => {
                         <p className="">Wind Speed</p>
                 </div>
             </div>
-            <div
-                className={"flex flex-col items-center gap-8 lg:gap-12 text-gray-300 lg:text-xl row-start-4 lg:flex-row lg:col-start-1 lg:col-end-12"}>
-                <Card className={`h-fit pb-8 pt-2`}><p>Check the upcoming weather forecasts with up to five days of
-                    weather data.</p>
-                </Card>
-                <Card className={"h-fit pb-8 pt-2"}>
-                    <p>Save forecasts to your account to view again later <Link to={"/signup"}
-                                                                                className={"text-gray-400 underline underline-offset-4 hover:text-secondary-300 hover:opacity-70"}>(account
-                        required)</Link>.</p>
-                </Card>
-                <Card className={"h-fit pb-8 pt-2"}>
-                    <p>Check historical forecasts for dates in the past <span
-                        className={"text-primary-50"}>(coming soon).</span>
-                    </p>
-                </Card>
-            </div>
+
+            <FeatureCards className={"row-start-4  lg:col-start-1 lg:col-end-12"}/>
 
             <div id={"img-container"}
                  className={"relative row-start-3 lg:col-start-5 lg:col-end-13 lg:row-start-1 lg:row-end-4 min-h-0 min-w-0 overflow-hidden lg:-mr-2 "}>

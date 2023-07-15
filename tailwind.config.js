@@ -13,6 +13,7 @@ module.exports = {
                'tilt-prism': ['Tilt Prism', 'cursive'],
                'montserrat': ['Montserrat', 'sans-serif'],
                'open-sans': ['Open Sans', 'sans-serif'],
+               'inter': ['Inter', 'sans-serif'],
            },
            colors: {
                primary: {
