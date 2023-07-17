@@ -4,12 +4,13 @@ type InputProps = {
     label: string;
     placeholder: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    className?: string;
 }
 
 const Input = (props: InputProps) => {
 
   return (
-      <div className="border w-56 bg-gray-600 border-gray-400 rounded px-3 py-1 shadow-sm focus-within:ring-1 focus-within:ring-secondary-600 focus-within:border-secondary-600">
+      <div className={`border w-56 bg-gray-600 border-gray-400 rounded px-3 py-1 shadow-sm focus-within:ring-1 focus-within:ring-secondary-600 focus-within:border-secondary-600 ${props.className}`}>
           <label htmlFor="zip-code" className="block text-xs font-medium text-gray-100 invalid:text-red-500">
               {props.label}
           </label>

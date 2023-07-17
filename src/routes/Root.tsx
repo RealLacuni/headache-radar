@@ -1,6 +1,6 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
-import {Nav} from "../components/Nav.tsx";
+import {Nav} from "../components/Header/Nav.tsx";
 import Footer from "../components/Footer.tsx";
 
 

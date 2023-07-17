@@ -1,4 +1,4 @@
-import FeatureCards from "./FeatureCards.tsx";
+import FeatureCards from "./Forecast/FeatureCards.tsx";
 
 
 const Hero = () => {

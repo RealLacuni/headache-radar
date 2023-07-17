@@ -1,9 +1,9 @@
-import React, {ReactElement, useState} from "react"
+import React, { ReactElement, useState} from "react"
 import {Bars3Icon} from "@heroicons/react/24/solid";
 import {Link, useNavigate} from "react-router-dom";
 
-
 const pages: string[] = ["", "Forecast", "Projects", "Contact"];
+
 
 const MobileMenu = (props: MobileMenuProps): ReactElement => {
     const [open, setOpen] = useState(false);
@@ -42,7 +42,8 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
                             {page == "" ? "Home" : page}
                         </Link>
                     )
-                })}
+                })
+                }
             </div>
 
             <div className={"lg:hidden"}>
