@@ -7,8 +7,8 @@ import Root from "./routes/Root.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
 import Home from "./routes/Home.tsx";
 import Forecast from "./routes/Forecast.tsx";
-import createStore from "./store/store.ts";
-import {Provider} from "react-redux";
+// import createStore from "./store/store.ts";
+// import {Provider} from "react-redux";
 
 const router = createBrowserRouter([
     {
@@ -32,11 +32,9 @@ const router = createBrowserRouter([
         ]
     }
 ]);
-
-const store = createStore;
+//
+// const store = createStore;
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <Provider store={store}>
     <RouterProvider router={router}/>
-    </Provider>
         )

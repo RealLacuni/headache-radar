@@ -1,30 +1,28 @@
-import {createSlice, createSelector} from '@reduxjs/toolkit'
-import {RootState} from "../store/store.ts";
+import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
 
 const initialState: FullForecast = {
-    dailyForecast: null,
-    hourlyData: []
+    dailyForecastList: null,
+    hourlyDataList: null,
+    overallRisk: 0,
+    tempRisk: 0,
+    pressureRisk: 0,
+    humidityRisk: 0,
+    date: '',
+    location: ''
 }
 
+export const fetchForecastData = createAsyncThunk<FullForecast>(
+    'forecast/fetchForecastData',
+    async () => {
+        const response = await fetch('/your-api-endpoint');
+        return response.json();
+    }
+)
 const forecastSlice = createSlice(
     {
         name: 'forecast',
         initialState,
-        reducers: {
-            setDailyForecast: (state, action) => {
-                state.dailyForecast = action.payload.dailyForecast;
-            },
-            setHourlyForecast: (state, action) => {
-                state.hourlyData = action.payload.hourlyData;
-            }
-        }
-    }
-)
+        reducers: {}
+    })
 
-const selectForecast = (state: RootState) => state.forecast;
-const selectDailyForecast = createSelector(selectForecast, (forecast) => forecast.dailyForecast);
-const selectHourlyData = createSelector(selectForecast, (forecast) => forecast.hourlyData);
-
-export const forecastSelectors = {selectDailyForecast, selectHourlyData};
-export const {setDailyForecast, setHourlyForecast} = forecastSlice.actions;
 export default forecastSlice.reducer;

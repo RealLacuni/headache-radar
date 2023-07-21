@@ -9,7 +9,6 @@ const Hero = () => {
             <h1 className={"text-4xl lg:text-6xl lg:py-0 font-bold align-text-bottom row-start-1 col-start-1 lg:col-end-6"}>At
                 a
                 glance...</h1>
-            {/*vvvv maybe change this to a flex container vvvv */}
             <div className={"row-start-2 lg:row-start-1 lg:row-end-4 col-start-1 col-end-5 lg:col-end-7 gap-12"}>
 
                 <p className={"text-slate-200 lg:mt-10 text-xl font-normal leading-loose pb-10"}>

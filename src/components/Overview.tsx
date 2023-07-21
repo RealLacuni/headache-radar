@@ -2,21 +2,26 @@
 import {ArrowSmallDownIcon, ArrowSmallUpIcon} from '@heroicons/react/24/solid'
 import {temperatureIcon, humidityIcon, pressureIcon} from '../assets/svg/Icons'
 
-const stats = [
-    {id: 1, name: 'Temperature', stat: '71,897', icon: temperatureIcon, change: '122', changeType: 'increase'},
-    {id: 3, name: 'Pressure', stat: '24.57%', icon: pressureIcon, change: '3.2%', changeType: 'decrease'},
-    {id: 2, name: 'Humidity', stat: '58.16%', icon: humidityIcon, change: '5.4%', changeType: 'increase'},
-]
-
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Overview = () => {
+type OverViewProps = {
+    parsedForecast: ParsedForecast
+}
+
+const Overview = (props : OverViewProps) => {
+    const parsedForecast = props.parsedForecast;
+    const combinedForecastList = Array.from(parsedForecast.dayMap.values());
+    console.log(combinedForecastList)
+    const stats = [
+        {id: 1, name : "Temperature", stat : combinedForecastList[0].dailyForecast.averageTemperature.toFixed(2), icon : temperatureIcon, risk: parsedForecast.tempRisk},
+        {id: 2, name : "Humidity", stat : combinedForecastList[0].dailyForecast.averageHumidity.toFixed(2), icon : humidityIcon, risk: parsedForecast.humidityRisk},
+        {id: 3, name : "Pressure", stat : combinedForecastList[0].dailyForecast.averagePressure.toFixed(2), icon : pressureIcon, risk: parsedForecast.pressureRisk},
+        ]
     return (
         <div className={"px-4"}>
             <h3 className="leading-8 font-semibold text-3xl text-primary-100">Overview</h3>
-
             <dl className="mt-5 grid gap-5 grid-cols-2 lg:grid-cols-3">
                 {stats.map((item) => (
                     <div
@@ -33,11 +38,11 @@ const Overview = () => {
                             <p className="text-2xl font-semibold text-gray-100">{item.stat}</p>
                             <p
                                 className={classNames(
-                                    item.changeType === 'increase' ? 'text-green-600' : 'text-red-600',
+                                    item.risk == 0 ? 'text-green-600' : 'text-red-600',
                                     'ml-2 flex items-baseline text-sm font-semibold'
                                 )}
                             >
-                                {item.changeType === 'increase' ? (
+                                {item.risk === 0 ? (
                                     <ArrowSmallUpIcon className="self-center flex-shrink-0 h-5 w-5 text-green-500"
                                                       aria-hidden="true"/>
                                 ) : (
@@ -45,9 +50,6 @@ const Overview = () => {
                                                         aria-hidden="true"/>
                                 )}
 
-                                <span
-                                    className="sr-only">{item.changeType === 'increase' ? 'Increased' : 'Decreased'} by</span>
-                                {item.change}
                             </p>
                             <div className="absolute bottom-0 inset-x-0 bg-gray-800 px-4 py-4 sm:px-6">
                                 <div className="text-sm">
