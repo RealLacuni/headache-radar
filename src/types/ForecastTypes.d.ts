@@ -1,5 +1,4 @@
 type DailyForecast = {
-    id: number;
     date: string;
     location: string;
 
@@ -9,7 +8,6 @@ type DailyForecast = {
 }
 
 type HourlyData = {
-id: number;
 temperature: number;
 pressure: number;
 humidity: number;
@@ -18,7 +16,6 @@ time: string;
 }
 
 type FullForecast = {
-
     dailyForecastList: DailyForecast[] | null;
     hourlyDataList: HourlyData[] | null;
     overallRisk: number;
@@ -28,8 +25,9 @@ type FullForecast = {
     date: string;
     location: string;
 }
-type ParsedForecast = {
-    dayMap: Map<string, CombinedForecast>;
+type CompiledForecasts = {
+    dailyForecastList: DailyForecast[];
+    dateToHourlyData: Map<string, HourlyData[]> | null;
     overallRisk: number;
     tempRisk: number;
     pressureRisk: number;
@@ -37,7 +35,4 @@ type ParsedForecast = {
     date: string;
     location: string;
 }
-type CombinedForecast = {
-    dailyForecast: DailyForecast;
-    hourlyDataList: HourlyData[];
-}
+

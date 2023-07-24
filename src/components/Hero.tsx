@@ -1,4 +1,4 @@
-import FeatureCards from "./Forecast/FeatureCards.tsx";
+import FeatureList from "./Forecast/FeatureList.tsx";
 
 
 const Hero = () => {
@@ -26,7 +26,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <FeatureCards className={"row-start-4  lg:col-start-1 lg:col-end-12"}/>
+            <FeatureList className={"row-start-4  lg:col-start-1 lg:col-end-12"}/>
 
             <div id={"img-container"}
                  className={"relative row-start-3 lg:col-start-5 lg:col-end-13 lg:row-start-1 lg:row-end-4 min-h-0 min-w-0 overflow-hidden lg:-mr-2 "}>

@@ -1,23 +1,28 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {ArrowSmallDownIcon, ArrowSmallUpIcon} from '@heroicons/react/24/solid'
 import {temperatureIcon, humidityIcon, pressureIcon} from '../assets/svg/Icons'
+import ErrorPage from "./ErrorPage.tsx";
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
 type OverViewProps = {
-    parsedForecast: ParsedForecast
+    compiledForecasts: CompiledForecasts;
 }
 
 const Overview = (props : OverViewProps) => {
-    const parsedForecast = props.parsedForecast;
-    const combinedForecastList = Array.from(parsedForecast.dayMap.values());
+    const compliedForecasts = props.compiledForecasts;
+    if (compliedForecasts == null || compliedForecasts.dateToHourlyData == null) {
+        console.log("Error: Compiled Forecasts is null")
+        return <ErrorPage/>;
+    }
+    const combinedForecastList = Array.from(compliedForecasts.dateToHourlyData.values());
     console.log(combinedForecastList)
     const stats = [
-        {id: 1, name : "Temperature", stat : combinedForecastList[0].dailyForecast.averageTemperature.toFixed(2), icon : temperatureIcon, risk: parsedForecast.tempRisk},
-        {id: 2, name : "Humidity", stat : combinedForecastList[0].dailyForecast.averageHumidity.toFixed(2), icon : humidityIcon, risk: parsedForecast.humidityRisk},
-        {id: 3, name : "Pressure", stat : combinedForecastList[0].dailyForecast.averagePressure.toFixed(2), icon : pressureIcon, risk: parsedForecast.pressureRisk},
+        {id: 1, name : "Temperature", stat : compliedForecasts.dailyForecastList[0].averageTemperature.toFixed(2), icon : temperatureIcon, risk: compliedForecasts.tempRisk},
+        {id: 2, name : "Humidity", stat : compliedForecasts.dailyForecastList[0].averageHumidity.toFixed(2), icon : humidityIcon, risk: compliedForecasts.humidityRisk},
+        {id: 3, name : "Pressure", stat : compliedForecasts.dailyForecastList[0].averagePressure.toFixed(2), icon : pressureIcon, risk: compliedForecasts.pressureRisk},
         ]
     return (
         <div className={"px-4"}>
