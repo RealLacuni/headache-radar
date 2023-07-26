@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import {ArrowSmallDownIcon, ArrowSmallUpIcon} from '@heroicons/react/24/solid'
+import {CheckIcon, ExclamationCircleIcon} from '@heroicons/react/24/solid'
 import {temperatureIcon, humidityIcon, pressureIcon} from '../assets/svg/Icons'
 import ErrorPage from "./ErrorPage.tsx";
 
@@ -25,9 +25,9 @@ const Overview = (props : OverViewProps) => {
         {id: 3, name : "Pressure", stat : compliedForecasts.dailyForecastList[0].averagePressure.toFixed(2), icon : pressureIcon, risk: compliedForecasts.pressureRisk},
         ]
     return (
-        <div className={"px-4"}>
-            <h3 className="leading-8 font-semibold text-3xl text-primary-100">Overview</h3>
-            <dl className="mt-5 grid gap-5 grid-cols-2 lg:grid-cols-3">
+        <div className={"flex flex-col gap-6"}>
+            <h3 className="leading-8 font-semibold text-2xl text-primary-100 border-b pb-2">Overview</h3>
+            <dl className="mt-5 grid gap-5 grid-cols-1 lg:grid-cols-3">
                 {stats.map((item) => (
                     <div
                         key={item.id}
@@ -40,7 +40,7 @@ const Overview = (props : OverViewProps) => {
                             <p className="ml-16 text-sm font-medium text-gray-200 truncate">{item.name}</p>
                         </dt>
                         <dd className="ml-16 pb-6 flex items-baseline sm:pb-7">
-                            <p className="text-2xl font-semibold text-gray-100">{item.stat}</p>
+                            <p className="sm:text-md text-xl font-semibold text-gray-100">{item.stat}</p>
                             <p
                                 className={classNames(
                                     item.risk == 0 ? 'text-green-600' : 'text-red-600',
@@ -48,10 +48,10 @@ const Overview = (props : OverViewProps) => {
                                 )}
                             >
                                 {item.risk === 0 ? (
-                                    <ArrowSmallUpIcon className="self-center flex-shrink-0 h-5 w-5 text-green-500"
+                                    <CheckIcon className="self-center flex-shrink-0 h-5 w-5 text-green-500"
                                                       aria-hidden="true"/>
                                 ) : (
-                                    <ArrowSmallDownIcon className="self-center flex-shrink-0 h-5 w-5 text-red-500"
+                                    <ExclamationCircleIcon className="self-center flex-shrink-0 h-5 w-5"
                                                         aria-hidden="true"/>
                                 )}
 

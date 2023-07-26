@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import LoadingScreen from "../components/LoadingScreen.tsx";
 import SearchInput from "../components/Forecast/SearchInput.tsx";
 import * as sampleJson from "../assets/forecastJSON.json";
+import ForecastGraphSection from "../components/Forecast/ForecastGraphSection.tsx";
 
 const mockRetrieveData = () => {
     const dateToHourlyDataMap = new Map(Object.entries(sampleJson.dateToHourlyData));
@@ -45,7 +46,7 @@ const Forecast = () => {
 
     return (
 
-        <main className={"flex flex-col"}>
+        <main className={"flex flex-col mt-12"}>
             {loading && <LoadingScreen/>}
             {(forecast == null) &&
                 <>
@@ -57,9 +58,11 @@ const Forecast = () => {
                 </>
             }
             {(forecast != null) &&
-                <>
+                <div className={"flex flex-col gap-20 px-4"}>
                     <Overview compiledForecasts={forecast}/>
-                </>
+                    <ForecastGraphSection compiledForecasts={forecast}/>
+                </div>
+
             }
         </main>
     )
