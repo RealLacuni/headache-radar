@@ -6,7 +6,7 @@ import * as sampleJson from "../assets/forecastJSON.json";
 import ForecastGraphSection from "../components/Forecast/ForecastGraphSection.tsx";
 
 const mockRetrieveData = () => {
-    const dateToHourlyDataMap = new Map(Object.entries(sampleJson.dateToHourlyData));
+    const dateToHourlyDataMap: Map<string, HourlyData[]> = new Map(Object.entries(sampleJson.dateToHourlyData));
 // Create the CompiledForecasts object with the correct types
     const compiledForecasts: CompiledForecasts = {
         dailyForecastList: sampleJson.dailyForecastList,

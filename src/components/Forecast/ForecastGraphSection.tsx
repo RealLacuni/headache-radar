@@ -1,33 +1,33 @@
-import Tabs from "../Tabs.tsx";
 import {useState} from "react";
+import Tabs from "../Tabs.tsx";
+import Card from "../Card.tsx";
+import Graph from "./Graph.tsx";
 
 
 const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: CompiledForecasts }) => {
 
     const tabs = compiledForecasts.dailyForecastList.map((dailyForecast) => {
         return {
-            name: formatDate(dailyForecast.date),
-            href: "#",
-            current: false
+            name: dailyForecast.date,
+            href: "#"
         }
     })
-    tabs[0].current = true;
 
     const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
     return (
         <section className={"flex flex-col gap-6"}>
-            <h3 className="leading-8 font-semibold text-2xl text-primary-100 border-b pb-2">Graphs</h3>
-            <Tabs tabs={tabs} setSelectedTab={setSelectedTab}/>
-            <div>{selectedTab.name}</div>
+            <Card>
+                <Tabs tabs={tabs} setSelectedTab={setSelectedTab} selectedTab={selectedTab}/>
+                <div>{selectedTab.name}</div>
+                {compiledForecasts.dateToHourlyData &&
+                    <Graph date={selectedTab.name} dateToHourlyData={compiledForecasts.dateToHourlyData}/>
+                }
+            </Card>
         </section>
     )
 }
 
-function formatDate(dateString: string): string {
-    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat('en-US', options).format(date);
-}
+
 
 export default ForecastGraphSection;

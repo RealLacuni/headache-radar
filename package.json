@@ -18,6 +18,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@nivo/core": "^0.83.0",
+    "@nivo/line": "^0.83.0",
     "@popperjs/core": "^2.11.8",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/react-router": "^5.1.20",

@@ -9,7 +9,7 @@ const Home = () => {
             <Hero/>
             <a
                 href={"/forecast"}
-                className={"py-4 self-center px-6 lg:mt-20 lg:px-4 my-4 rounded-md lg:text-lg text-primary-200 font-bold transition duration-300 ease-in-out hover:text-secondary-200 hover:shadow-lg"}>
+                className={"py-4 self-center px-6 lg:mt-20 lg:px-4 my-4 rounded-md lg:text-lg text-primary-200 font-bold border-b border-transparent hover:border-black hover:text-secondary-200 hover:border-solid"}>
                 Try it out
                 <ArrowRightIcon className={"inline-block ml-2 h-4 w-4"}/>
             </a>

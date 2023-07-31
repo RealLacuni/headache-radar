@@ -6,12 +6,10 @@ const Hero = () => {
     return (
         <div className={"grid pt-20 gap-y-20 pl-4 grid-cols-1 grid-rows-8 lg:grid-cols-12 items-center"}>
 
-            <h1 className={"text-4xl lg:text-6xl lg:py-0 font-bold align-text-bottom row-start-1 col-start-1 lg:col-end-6"}>At
-                a
-                glance...</h1>
+            <h1 className={"text-4xl lg:text-6xl lg:py-0 font-bold align-text-bottom row-start-1 col-start-1 lg:col-end-6"}>At a glance...</h1>
             <div className={"row-start-2 lg:row-start-1 lg:row-end-4 col-start-1 col-end-5 lg:col-end-7 gap-12"}>
 
-                <p className={"text-slate-200 lg:mt-10 text-xl font-normal leading-loose pb-10"}>
+                <p className={"text-slate-300 lg:mt-10 text-xl font-normal leading-loose pb-10"}>
                     See how the weather may affect you based on factors such as changes in,
                 </p>
                 <div
