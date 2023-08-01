@@ -2,728 +2,720 @@
   "dailyForecastList": [
     {
       "location": "11222",
-      "date": "2023-07-23",
-      "averagePressure": 1014.4,
-      "averageTemperature": 302.686,
-      "averageHumidity": 42.0
+      "date": "2023-07-31",
+      "averagePressure": 1014.2857142857143,
+      "averageTemperature": 297.8504761904762,
+      "averageHumidity": 39.38095238095238
     },
     {
       "location": "11222",
-      "date": "2023-07-24",
-      "averagePressure": 1017.9583333333334,
-      "averageTemperature": 299.76124999999996,
-      "averageHumidity": 51.916666666666664
+      "date": "2023-08-01",
+      "averagePressure": 1018.0416666666666,
+      "averageTemperature": 297.2291666666667,
+      "averageHumidity": 42.083333333333336
     },
     {
       "location": "11222",
-      "date": "2023-07-25",
-      "averagePressure": 1018.4166666666666,
-      "averageTemperature": 299.55249999999995,
-      "averageHumidity": 63.416666666666664
+      "date": "2023-08-02",
+      "averagePressure": 1021.4583333333334,
+      "averageTemperature": 296.38958333333335,
+      "averageHumidity": 36.916666666666664
     },
     {
       "location": "11222",
-      "date": "2023-07-26",
-      "averagePressure": 1018.1666666666666,
-      "averageTemperature": 300.3641666666667,
-      "averageHumidity": 58.166666666666664
+      "date": "2023-08-03",
+      "averagePressure": 1019.75,
+      "averageTemperature": 296.9191666666666,
+      "averageHumidity": 54.5
     },
     {
       "location": "11222",
-      "date": "2023-07-27",
-      "averagePressure": 1016.578947368421,
-      "averageTemperature": 300.8657894736843,
-      "averageHumidity": 64.89473684210526
+      "date": "2023-08-04",
+      "averagePressure": 1017.0,
+      "averageTemperature": 296.2066666666667,
+      "averageHumidity": 73.33333333333333
     }
   ],
   "dateToHourlyData": {
-    "2023-07-23": [
+    "July 31, 2023": [
       {
-        "time": "2023-07-23T20:00:00-04:00",
-        "duration": 1,
-        "pressure": 1015,
-        "temperature": 300.64,
-        "humidity": 51
-      },
-      {
-        "time": "2023-07-23T21:00:00-04:00",
-        "duration": 1,
-        "pressure": 1015,
-        "temperature": 300.15,
-        "humidity": 53
-      },
-      {
-        "time": "2023-07-23T22:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 299.66,
-        "humidity": 54
-      },
-      {
-        "time": "2023-07-23T23:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 299.04,
-        "humidity": 55
-      },
-      {
-        "time": "2023-07-23T15:00:00-04:00",
+        "time": "2023-07-31T00:00:00-04:00",
         "duration": 1,
         "pressure": 1014,
-        "temperature": 303.62,
-        "humidity": 40
-      },
-      {
-        "time": "2023-07-23T16:00:00-04:00",
-        "duration": 1,
-        "pressure": 1014,
-        "temperature": 303.49,
-        "humidity": 39
-      },
-      {
-        "time": "2023-07-23T17:00:00-04:00",
-        "duration": 1,
-        "pressure": 1014,
-        "temperature": 302.85,
-        "humidity": 41
-      },
-      {
-        "time": "2023-07-23T18:00:00-04:00",
-        "duration": 1,
-        "pressure": 1015,
-        "temperature": 302.1,
-        "humidity": 43
-      },
-      {
-        "time": "2023-07-23T19:00:00-04:00",
-        "duration": 1,
-        "pressure": 1015,
-        "temperature": 301.37,
-        "humidity": 47
-      }
-    ],
-    "2023-07-24": [
-      {
-        "time": "2023-07-24T20:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 300.77,
-        "humidity": 57
-      },
-      {
-        "time": "2023-07-24T21:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 300.33,
-        "humidity": 56
-      },
-      {
-        "time": "2023-07-24T22:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 299.52,
-        "humidity": 58
-      },
-      {
-        "time": "2023-07-24T23:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 299.02,
-        "humidity": 61
-      },
-      {
-        "time": "2023-07-24T00:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 298.57,
-        "humidity": 56
-      },
-      {
-        "time": "2023-07-24T01:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 298.15,
-        "humidity": 56
-      },
-      {
-        "time": "2023-07-24T02:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 297.64,
-        "humidity": 56
-      },
-      {
-        "time": "2023-07-24T03:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 297.16,
-        "humidity": 57
-      },
-      {
-        "time": "2023-07-24T04:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 296.78,
-        "humidity": 59
-      },
-      {
-        "time": "2023-07-24T05:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 296.47,
-        "humidity": 62
-      },
-      {
-        "time": "2023-07-24T06:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.17,
-        "humidity": 64
-      },
-      {
-        "time": "2023-07-24T07:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.76,
-        "humidity": 63
-      },
-      {
-        "time": "2023-07-24T08:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 297.85,
-        "humidity": 60
-      },
-      {
-        "time": "2023-07-24T09:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 299.02,
-        "humidity": 55
-      },
-      {
-        "time": "2023-07-24T10:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 300.33,
-        "humidity": 50
-      },
-      {
-        "time": "2023-07-24T11:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 301.6,
-        "humidity": 44
-      },
-      {
-        "time": "2023-07-24T12:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 302.36,
-        "humidity": 40
-      },
-      {
-        "time": "2023-07-24T13:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 302.87,
-        "humidity": 40
-      },
-      {
-        "time": "2023-07-24T14:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 302.99,
-        "humidity": 41
-      },
-      {
-        "time": "2023-07-24T15:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 302.78,
-        "humidity": 42
-      },
-      {
-        "time": "2023-07-24T16:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 302.66,
-        "humidity": 42
-      },
-      {
-        "time": "2023-07-24T17:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 302.13,
-        "humidity": 44
-      },
-      {
-        "time": "2023-07-24T18:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 301.55,
-        "humidity": 48
-      },
-      {
-        "time": "2023-07-24T19:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 300.94,
-        "humidity": 54
-      }
-    ],
-    "2023-07-25": [
-      {
-        "time": "2023-07-25T20:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 300.36,
-        "humidity": 61
-      },
-      {
-        "time": "2023-07-25T21:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 299.78,
-        "humidity": 64
-      },
-      {
-        "time": "2023-07-25T22:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 299.31,
-        "humidity": 66
-      },
-      {
-        "time": "2023-07-25T23:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 298.68,
-        "humidity": 69
-      },
-      {
-        "time": "2023-07-25T00:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 298.28,
-        "humidity": 66
-      },
-      {
-        "time": "2023-07-25T01:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 297.4,
-        "humidity": 72
-      },
-      {
-        "time": "2023-07-25T02:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 297.01,
-        "humidity": 75
-      },
-      {
-        "time": "2023-07-25T03:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.59,
-        "humidity": 78
-      },
-      {
-        "time": "2023-07-25T04:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.04,
-        "humidity": 82
-      },
-      {
-        "time": "2023-07-25T05:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 295.95,
-        "humidity": 82
-      },
-      {
-        "time": "2023-07-25T06:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 295.9,
-        "humidity": 82
-      },
-      {
-        "time": "2023-07-25T07:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.31,
-        "humidity": 79
-      },
-      {
-        "time": "2023-07-25T08:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.97,
-        "humidity": 76
-      },
-      {
-        "time": "2023-07-25T09:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 298.15,
-        "humidity": 70
-      },
-      {
-        "time": "2023-07-25T10:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 299.51,
-        "humidity": 64
-      },
-      {
-        "time": "2023-07-25T11:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 301.34,
-        "humidity": 55
-      },
-      {
-        "time": "2023-07-25T12:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 302.73,
-        "humidity": 48
-      },
-      {
-        "time": "2023-07-25T13:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 303.62,
-        "humidity": 45
-      },
-      {
-        "time": "2023-07-25T14:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 304.2,
-        "humidity": 44
-      },
-      {
-        "time": "2023-07-25T15:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 303.86,
-        "humidity": 47
-      },
-      {
-        "time": "2023-07-25T16:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 301.22,
-        "humidity": 56
-      },
-      {
-        "time": "2023-07-25T17:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 301.95,
-        "humidity": 54
-      },
-      {
-        "time": "2023-07-25T18:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 301.43,
-        "humidity": 57
-      },
-      {
-        "time": "2023-07-25T19:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 301.16,
-        "humidity": 58
-      }
-    ],
-    "2023-07-26": [
-      {
-        "time": "2023-07-26T20:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 300.75,
-        "humidity": 65
-      },
-      {
-        "time": "2023-07-26T21:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 300.51,
-        "humidity": 69
-      },
-      {
-        "time": "2023-07-26T22:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 300.85,
-        "humidity": 66
-      },
-      {
-        "time": "2023-07-26T23:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 300.41,
-        "humidity": 67
-      },
-      {
-        "time": "2023-07-26T00:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 298.17,
-        "humidity": 71
-      },
-      {
-        "time": "2023-07-26T01:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 297.98,
-        "humidity": 71
-      },
-      {
-        "time": "2023-07-26T02:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 297.58,
-        "humidity": 73
-      },
-      {
-        "time": "2023-07-26T03:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 297.18,
-        "humidity": 74
-      },
-      {
-        "time": "2023-07-26T04:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 296.96,
-        "humidity": 73
-      },
-      {
-        "time": "2023-07-26T05:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 296.7,
-        "humidity": 72
-      },
-      {
-        "time": "2023-07-26T06:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 296.55,
-        "humidity": 72
-      },
-      {
-        "time": "2023-07-26T07:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 297.08,
-        "humidity": 67
-      },
-      {
-        "time": "2023-07-26T08:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 298.4,
-        "humidity": 60
-      },
-      {
-        "time": "2023-07-26T09:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 299.95,
-        "humidity": 53
-      },
-      {
-        "time": "2023-07-26T10:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 301.63,
-        "humidity": 47
-      },
-      {
-        "time": "2023-07-26T11:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 302.94,
-        "humidity": 43
-      },
-      {
-        "time": "2023-07-26T12:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 303.87,
-        "humidity": 41
-      },
-      {
-        "time": "2023-07-26T13:00:00-04:00",
-        "duration": 1,
-        "pressure": 1019,
-        "temperature": 304.39,
-        "humidity": 41
-      },
-      {
-        "time": "2023-07-26T14:00:00-04:00",
-        "duration": 1,
-        "pressure": 1018,
-        "temperature": 304.51,
-        "humidity": 41
-      },
-      {
-        "time": "2023-07-26T15:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 304.54,
-        "humidity": 41
-      },
-      {
-        "time": "2023-07-26T16:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 304.33,
-        "humidity": 42
-      },
-      {
-        "time": "2023-07-26T17:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 303.58,
+        "temperature": 295.75,
         "humidity": 46
       },
       {
-        "time": "2023-07-26T18:00:00-04:00",
+        "time": "2023-07-31T01:00:00-04:00",
         "duration": 1,
-        "pressure": 1017,
-        "temperature": 302.49,
-        "humidity": 51
+        "pressure": 1014,
+        "temperature": 295.47,
+        "humidity": 47
       },
       {
-        "time": "2023-07-26T19:00:00-04:00",
+        "time": "2023-07-31T02:00:00-04:00",
         "duration": 1,
-        "pressure": 1017,
-        "temperature": 301.78,
-        "humidity": 57
-      }
-    ],
-    "2023-07-27": [
-      {
-        "time": "2023-07-27T00:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 299.85,
-        "humidity": 72
-      },
-      {
-        "time": "2023-07-27T01:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 299.46,
-        "humidity": 74
-      },
-      {
-        "time": "2023-07-27T02:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 299.31,
-        "humidity": 75
-      },
-      {
-        "time": "2023-07-27T03:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 299.29,
-        "humidity": 74
-      },
-      {
-        "time": "2023-07-27T04:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 299.19,
-        "humidity": 74
-      },
-      {
-        "time": "2023-07-27T05:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 298.51,
-        "humidity": 78
-      },
-      {
-        "time": "2023-07-27T06:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 298.32,
-        "humidity": 80
-      },
-      {
-        "time": "2023-07-27T07:00:00-04:00",
-        "duration": 1,
-        "pressure": 1016,
-        "temperature": 298.57,
-        "humidity": 80
-      },
-      {
-        "time": "2023-07-27T08:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 299.61,
-        "humidity": 72
-      },
-      {
-        "time": "2023-07-27T09:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 301.37,
-        "humidity": 57
-      },
-      {
-        "time": "2023-07-27T10:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 302.93,
-        "humidity": 49
-      },
-      {
-        "time": "2023-07-27T11:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 304.23,
-        "humidity": 45
-      },
-      {
-        "time": "2023-07-27T12:00:00-04:00",
-        "duration": 1,
-        "pressure": 1017,
-        "temperature": 303.23,
+        "pressure": 1014,
+        "temperature": 295.14,
         "humidity": 48
       },
       {
-        "time": "2023-07-27T13:00:00-04:00",
+        "time": "2023-07-31T03:00:00-04:00",
         "duration": 1,
-        "pressure": 1017,
-        "temperature": 304.59,
-        "humidity": 45
+        "pressure": 1014,
+        "temperature": 294.65,
+        "humidity": 49
       },
       {
-        "time": "2023-07-27T14:00:00-04:00",
+        "time": "2023-07-31T04:00:00-04:00",
+        "duration": 1,
+        "pressure": 1014,
+        "temperature": 294.28,
+        "humidity": 49
+      },
+      {
+        "time": "2023-07-31T05:00:00-04:00",
+        "duration": 1,
+        "pressure": 1014,
+        "temperature": 294.17,
+        "humidity": 49
+      },
+      {
+        "time": "2023-07-31T06:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 293.68,
+        "humidity": 50
+      },
+      {
+        "time": "2023-07-31T07:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 293.87,
+        "humidity": 48
+      },
+      {
+        "time": "2023-07-31T08:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 294.77,
+        "humidity": 44
+      },
+      {
+        "time": "2023-07-31T09:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 296.24,
+        "humidity": 39
+      },
+      {
+        "time": "2023-07-31T10:00:00-04:00",
         "duration": 1,
         "pressure": 1016,
-        "temperature": 305.47,
-        "humidity": 43
+        "temperature": 297.9,
+        "humidity": 34
+      },
+      {
+        "time": "2023-07-31T11:00:00-04:00",
+        "duration": 1,
+        "pressure": 1016,
+        "temperature": 299.24,
+        "humidity": 32
+      },
+      {
+        "time": "2023-07-31T12:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 300.34,
+        "humidity": 31
+      },
+      {
+        "time": "2023-07-31T13:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 301.36,
+        "humidity": 30
+      },
+      {
+        "time": "2023-07-31T14:00:00-04:00",
+        "duration": 1,
+        "pressure": 1014,
+        "temperature": 302.11,
+        "humidity": 29
+      },
+      {
+        "time": "2023-07-31T15:00:00-04:00",
+        "duration": 1,
+        "pressure": 1013,
+        "temperature": 302.78,
+        "humidity": 28
+      },
+      {
+        "time": "2023-07-31T16:00:00-04:00",
+        "duration": 1,
+        "pressure": 1013,
+        "temperature": 302.67,
+        "humidity": 29
+      },
+      {
+        "time": "2023-07-31T17:00:00-04:00",
+        "duration": 1,
+        "pressure": 1013,
+        "temperature": 302.35,
+        "humidity": 30
+      },
+      {
+        "time": "2023-07-31T18:00:00-04:00",
+        "duration": 1,
+        "pressure": 1013,
+        "temperature": 301.94,
+        "humidity": 32
+      },
+      {
+        "time": "2023-07-31T19:00:00-04:00",
+        "duration": 1,
+        "pressure": 1014,
+        "temperature": 300.35,
+        "humidity": 37
+      },
+      {
+        "time": "2023-07-31T20:00:00-04:00",
+        "duration": 1,
+        "pressure": 1015,
+        "temperature": 299.41,
+        "humidity": 39
+      },
+      {
+        "time": "2023-07-31T21:00:00-04:00",
+        "duration": 1,
+        "pressure": 1016,
+        "temperature": 298.8,
+        "humidity": 41
+      },
+      {
+        "time": "2023-07-31T22:00:00-04:00",
+        "duration": 1,
+        "pressure": 1016,
+        "temperature": 297.77,
+        "humidity": 46
+      },
+      {
+        "time": "2023-07-31T23:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 296.74,
+        "humidity": 50
       }
-    ]
+    ],
+    "August 01, 2023": [
+      {
+        "time": "2023-08-01T20:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 298.54,
+        "humidity": 31
+      },
+      {
+        "time": "2023-08-01T21:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 297.56,
+        "humidity": 38
+      },
+      {
+        "time": "2023-08-01T22:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 297.01,
+        "humidity": 38
+      },
+      {
+        "time": "2023-08-01T23:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 296.15,
+        "humidity": 40
+      },
+      {
+        "time": "2023-08-01T00:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 296.02,
+        "humidity": 52
+      },
+      {
+        "time": "2023-08-01T01:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 295.43,
+        "humidity": 53
+      },
+      {
+        "time": "2023-08-01T02:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 295.2,
+        "humidity": 54
+      },
+      {
+        "time": "2023-08-01T03:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 294.33,
+        "humidity": 58
+      },
+      {
+        "time": "2023-08-01T04:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 293.63,
+        "humidity": 60
+      },
+      {
+        "time": "2023-08-01T05:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 293.22,
+        "humidity": 61
+      },
+      {
+        "time": "2023-08-01T06:00:00-04:00",
+        "duration": 1,
+        "pressure": 1018,
+        "temperature": 292.93,
+        "humidity": 63
+      },
+      {
+        "time": "2023-08-01T07:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 293.09,
+        "humidity": 61
+      },
+      {
+        "time": "2023-08-01T08:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 294.24,
+        "humidity": 52
+      },
+      {
+        "time": "2023-08-01T09:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 295.79,
+        "humidity": 41
+      },
+      {
+        "time": "2023-08-01T10:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 297.23,
+        "humidity": 33
+      },
+      {
+        "time": "2023-08-01T11:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 298.34,
+        "humidity": 29
+      },
+      {
+        "time": "2023-08-01T12:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 299.35,
+        "humidity": 26
+      },
+      {
+        "time": "2023-08-01T13:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 300.32,
+        "humidity": 25
+      },
+      {
+        "time": "2023-08-01T14:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 300.96,
+        "humidity": 24
+      },
+      {
+        "time": "2023-08-01T15:00:00-04:00",
+        "duration": 1,
+        "pressure": 1018,
+        "temperature": 301.54,
+        "humidity": 25
+      },
+      {
+        "time": "2023-08-01T16:00:00-04:00",
+        "duration": 1,
+        "pressure": 1018,
+        "temperature": 300.52,
+        "humidity": 28
+      },
+      {
+        "time": "2023-08-01T17:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 300.02,
+        "humidity": 30
+      },
+      {
+        "time": "2023-08-01T18:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 299.57,
+        "humidity": 30
+      },
+      {
+        "time": "2023-08-01T19:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 299.05,
+        "humidity": 29
+      }
+    ],
+    "August 02, 2023": [
+      {
+        "time": "2023-08-02T20:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 296.65,
+        "humidity": 42
+      },
+      {
+        "time": "2023-08-02T21:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 296.29,
+        "humidity": 44
+      },
+      {
+        "time": "2023-08-02T22:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 296.13,
+        "humidity": 46
+      },
+      {
+        "time": "2023-08-02T23:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 295.97,
+        "humidity": 47
+      },
+      {
+        "time": "2023-08-02T00:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 295.54,
+        "humidity": 41
+      },
+      {
+        "time": "2023-08-02T01:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 294.76,
+        "humidity": 43
+      },
+      {
+        "time": "2023-08-02T02:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 293.91,
+        "humidity": 46
+      },
+      {
+        "time": "2023-08-02T03:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 293.26,
+        "humidity": 49
+      },
+      {
+        "time": "2023-08-02T04:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 292.73,
+        "humidity": 49
+      },
+      {
+        "time": "2023-08-02T05:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 292.37,
+        "humidity": 49
+      },
+      {
+        "time": "2023-08-02T06:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 291.99,
+        "humidity": 49
+      },
+      {
+        "time": "2023-08-02T07:00:00-04:00",
+        "duration": 1,
+        "pressure": 1023,
+        "temperature": 292.12,
+        "humidity": 48
+      },
+      {
+        "time": "2023-08-02T08:00:00-04:00",
+        "duration": 1,
+        "pressure": 1023,
+        "temperature": 293.13,
+        "humidity": 44
+      },
+      {
+        "time": "2023-08-02T09:00:00-04:00",
+        "duration": 1,
+        "pressure": 1023,
+        "temperature": 294.59,
+        "humidity": 38
+      },
+      {
+        "time": "2023-08-02T10:00:00-04:00",
+        "duration": 1,
+        "pressure": 1023,
+        "temperature": 296.1,
+        "humidity": 32
+      },
+      {
+        "time": "2023-08-02T11:00:00-04:00",
+        "duration": 1,
+        "pressure": 1023,
+        "temperature": 297.34,
+        "humidity": 29
+      },
+      {
+        "time": "2023-08-02T12:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 298.42,
+        "humidity": 26
+      },
+      {
+        "time": "2023-08-02T13:00:00-04:00",
+        "duration": 1,
+        "pressure": 1022,
+        "temperature": 299.68,
+        "humidity": 24
+      },
+      {
+        "time": "2023-08-02T14:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 300.46,
+        "humidity": 24
+      },
+      {
+        "time": "2023-08-02T15:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 300.52,
+        "humidity": 24
+      },
+      {
+        "time": "2023-08-02T16:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 300.33,
+        "humidity": 26
+      },
+      {
+        "time": "2023-08-02T17:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 299.92,
+        "humidity": 28
+      },
+      {
+        "time": "2023-08-02T18:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 299.15,
+        "humidity": 32
+      },
+      {
+        "time": "2023-08-02T19:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 297.77,
+        "humidity": 38
+      }
+    ],
+    "August 03, 2023": [
+      {
+        "time": "2023-08-03T20:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 296.67,
+        "humidity": 70
+      },
+      {
+        "time": "2023-08-03T21:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 296.24,
+        "humidity": 72
+      },
+      {
+        "time": "2023-08-03T22:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 295.71,
+        "humidity": 78
+      },
+      {
+        "time": "2023-08-03T00:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 295.91,
+        "humidity": 48
+      },
+      {
+        "time": "2023-08-03T01:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 295.71,
+        "humidity": 49
+      },
+      {
+        "time": "2023-08-03T02:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 295.46,
+        "humidity": 51
+      },
+      {
+        "time": "2023-08-03T03:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 295.13,
+        "humidity": 54
+      },
+      {
+        "time": "2023-08-03T04:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 294.85,
+        "humidity": 58
+      },
+      {
+        "time": "2023-08-03T05:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 294.66,
+        "humidity": 61
+      },
+      {
+        "time": "2023-08-03T06:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 294.75,
+        "humidity": 63
+      },
+      {
+        "time": "2023-08-03T07:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 295.26,
+        "humidity": 63
+      },
+      {
+        "time": "2023-08-03T08:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 295.88,
+        "humidity": 61
+      },
+      {
+        "time": "2023-08-03T09:00:00-04:00",
+        "duration": 1,
+        "pressure": 1021,
+        "temperature": 297.13,
+        "humidity": 56
+      },
+      {
+        "time": "2023-08-03T10:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 298.2,
+        "humidity": 50
+      },
+      {
+        "time": "2023-08-03T11:00:00-04:00",
+        "duration": 1,
+        "pressure": 1020,
+        "temperature": 299.36,
+        "humidity": 46
+      },
+      {
+        "time": "2023-08-03T12:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 300.13,
+        "humidity": 46
+      },
+      {
+        "time": "2023-08-03T13:00:00-04:00",
+        "duration": 1,
+        "pressure": 1019,
+        "temperature": 300.42,
+        "humidity": 47
+      },
+      {
+        "time": "2023-08-03T14:00:00-04:00",
+        "duration": 1,
+        "pressure": 1018,
+        "temperature": 299.44,
+        "humidity": 52
+      },
+      {
+        "time": "2023-08-03T15:00:00-04:00",
+        "duration": 1,
+        "pressure": 1018,
+        "temperature": 297.81,
+        "humidity": 62
+      },
+      {
+        "time": "2023-08-03T16:00:00-04:00",
+        "duration": 1,
+        "pressure": 1018,
+        "temperature": 298.09,
+        "humidity": 62
+      },
+      {
+        "time": "2023-08-03T17:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 298.25,
+        "humidity": 63
+      },
+      {
+        "time": "2023-08-03T18:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 297.57,
+        "humidity": 67
+      },
+      {
+        "time": "2023-08-03T19:00:00-04:00",
+        "duration": 1,
+        "pressure": 1017,
+        "temperature": 297.01,
+        "humidity": 70
+      }
+    ],
+    "August 04, 2023": []
   },
   "overallRisk": 1,
   "tempRisk": 0,
   "pressureRisk": 0,
   "humidityRisk": 3,
-  "date": "2023-07-23",
+  "date": "2023-07-31",
   "location": "11222"
 }

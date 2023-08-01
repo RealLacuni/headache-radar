@@ -27,7 +27,7 @@ type FullForecast = {
 }
 type CompiledForecasts = {
     dailyForecastList: DailyForecast[];
-    dateToHourlyData: Map<string, HourlyData[]> | null;
+    dateToHourlyData: Map<string, HourlyData[]>;
     overallRisk: number;
     tempRisk: number;
     pressureRisk: number;
@@ -36,3 +36,12 @@ type CompiledForecasts = {
     location: string;
 }
 
+type FeatureGraphData = {
+    id: string;
+    color: string;
+    data: {
+        x: string;
+        y: number;
+    }[];
+}
+type GraphData = featureGraphData[]
