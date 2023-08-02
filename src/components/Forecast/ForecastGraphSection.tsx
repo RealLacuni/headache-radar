@@ -18,8 +18,8 @@ const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: Compiled
     console.log(graphData)
 
     return (
-        <section className={"flex flex-col gap-6"}>
-            <Card>
+        <section className={"flex flex-col gap-6 mb-20"}>
+            <Card className={"rounded-xl"}>
                 <Tabs tabs={tabs} setSelectedTab={setSelectedTab} selectedTab={selectedTab}/>
                 <div>{selectedTab.name}</div>
                 {compiledForecasts.dateToHourlyData &&
