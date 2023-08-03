@@ -15,7 +15,6 @@ const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: Compiled
     const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
     const graphData = parseGraphData({compiledForecasts: compiledForecasts})
-    console.log(graphData)
 
     return (
         <section className={"flex flex-col gap-6 mb-20"}>

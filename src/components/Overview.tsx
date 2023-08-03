@@ -17,8 +17,6 @@ const Overview = (props : OverViewProps) => {
         console.log("Error: Compiled Forecasts is null")
         return <ErrorPage/>;
     }
-    const combinedForecastList = Array.from(compliedForecasts.dateToHourlyData.values());
-    console.log(combinedForecastList)
     const stats = [
         {id: 1, name : "Temperature", stat : compliedForecasts.dailyForecastList[0].averageTemperature.toFixed(2), icon : temperatureIcon, risk: compliedForecasts.tempRisk},
         {id: 2, name : "Humidity", stat : compliedForecasts.dailyForecastList[0].averageHumidity.toFixed(2), icon : humidityIcon, risk: compliedForecasts.humidityRisk},
