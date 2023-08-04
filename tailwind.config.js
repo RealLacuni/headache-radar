@@ -4,6 +4,9 @@ module.exports = {
    content: ["./src/**/*.{html,ts,tsx}"],
    theme: {
        extend: {
+           width: {
+               'graph': 'calc(400% - 300px)',
+           },
            backgroundImage: {
                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
            },

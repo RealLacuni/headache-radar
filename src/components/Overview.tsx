@@ -23,7 +23,7 @@ const Overview = (props : OverViewProps) => {
         {id: 3, name : "Pressure", stat : compliedForecasts.dailyForecastList[0].averagePressure.toFixed(2), icon : pressureIcon, risk: compliedForecasts.pressureRisk},
         ]
     return (
-        <div className={"flex flex-col gap-6"}>
+        <div className={"flex flex-col gap-6 px-2"}>
             <h3 className="leading-8 font-semibold text-2xl text-primary-100 border-b pb-2">Overview</h3>
             <dl className="mt-5 grid gap-5 grid-cols-1 lg:grid-cols-3">
                 {stats.map((item) => (

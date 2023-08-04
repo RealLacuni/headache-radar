@@ -64,7 +64,7 @@ const Forecast = () => {
                 </>
             }
             {(forecast != null && forecast.dateToHourlyData != null) &&
-                <div className={"flex flex-col gap-20 px-4"}>
+                <div className={"flex flex-col gap-20"}>
                     <Overview compiledForecasts={forecast}/>
                     <ForecastGraphSection compiledForecasts={forecast}/>
                 </div>

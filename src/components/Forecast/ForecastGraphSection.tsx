@@ -17,7 +17,7 @@ const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: Compiled
     const graphData = parseGraphData({compiledForecasts: compiledForecasts})
 
     return (
-        <section className={"flex flex-col gap-6 mb-20"}>
+        <section className={"flex flex-col gap-6 mb-20 px-2"}>
             <Card className={"rounded-xl"}>
                 <Tabs tabs={tabs} setSelectedTab={setSelectedTab} selectedTab={selectedTab}/>
                 <div>{selectedTab.name}</div>
