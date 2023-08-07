@@ -24,7 +24,7 @@ const Overview = (props : OverViewProps) => {
         ]
     return (
         <div className={"flex flex-col gap-6 px-2"}>
-            <h3 className="leading-8 font-semibold text-2xl text-primary-100 border-b pb-2">Overview</h3>
+            <h3 className="leading-8 font-semibold text-2xl text-primary-100 border-b pb-2 tracking-normal">Weekly Overview</h3>
             <dl className="mt-5 grid gap-5 grid-cols-1 lg:grid-cols-3">
                 {stats.map((item) => (
                     <div

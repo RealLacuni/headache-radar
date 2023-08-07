@@ -15,16 +15,6 @@ duration: number;
 time: string;
 }
 
-type FullForecast = {
-    dailyForecastList: DailyForecast[] | null;
-    hourlyDataList: HourlyData[] | null;
-    overallRisk: number;
-    tempRisk: number;
-    pressureRisk: number;
-    humidityRisk: number;
-    date: string;
-    location: string;
-}
 type CompiledForecasts = {
     dailyForecastList: DailyForecast[];
     dateToHourlyData: Map<string, HourlyData[]>;

@@ -6,28 +6,26 @@ const features = ["overview", "temperature", "pressure", "humidity"];
 const Graph = (props: GraphComponentProps) => {
     console.log(props.graphData)
 
-    //TODO:complete this
     const [feature, setFeature] = useState(features[0]); //temp, pressure, humidity
     const graphData = props.graphData.map((d) => d.get(props.date))
-    console.log(graphData)
+
     return (
         <>
 
             <div className={"flex flex-col gap-4"}>
-                <div className={"flex flex-col lg:flex-row gap-4 border-b p-2 pb-2"}>
+                <div className={"flex flex-col lg:flex-row gap-4 p-2 lg:self-center bg-slate-500 rounded"}>
                     {/*TODO: Turn these buttons into a prettier component. Looks ugly on desktop now, sad*/}
                     {features.map((featureName) => {
                         return (
                             <button key={featureName}
-                                    className={`rounded-md px-2 py-1 border${feature == featureName ? `text-primary-400 bg-gray-900 border-primary-300 shadow-lg` : `text-gray-200 border-gray-400 bg-gray-800 `} `}
+                                    className={`rounded-md px-2 py-1 border${feature == featureName ? `text-primary-400 bg-primary-700 border-primary-300 shadow-lg` : `text-gray-200 border-gray-400 bg-gray-800 `} `}
                                     onClick={() => setFeature(featureName)}>{featureName && featureName[0].toUpperCase() + featureName.slice(1)}</button>
                         )
                     })}
                 </div>
             </div>
 
-
-            <div className={"border-4 border-gray-900 bg-primary-800 mt-10 flex-none w-100 overflow-y-scroll -mx-6"}>
+            <div className={"border-4 border-gray-900 bg-primary-800 mt-10 flex-none w-100 overflow-x-scroll lg:overflow-hidden -mx-6"}>
                 <div className={"h-96 w-[50rem]"}>
                     <ResponsiveLineGraph data={graphData as GraphData} feature={feature}/>
                 </div>

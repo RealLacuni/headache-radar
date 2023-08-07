@@ -38,7 +38,7 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
                 {pages.map((page: string) => {
                     return (
                         <Link to={`/${page.toLowerCase()}`} key={page} id={page}
-                              className="px-6 text-primary-200 text-2xl hover:bg-slate-600 hover:rounded-bl-md hover:rounded-t-sm hover:rounded-br-md hover:text-white">
+                              className="px-6 text-primary-200 text-2xl hover:bg-slate-600 hover:rounded-bl-md hover:rounded-t-sm hover:rounded-br-md hover:text-white z-30">
                             {page == "" ? "Home" : page}
                         </Link>
                     )
@@ -51,12 +51,12 @@ const MobileMenu = (props: MobileMenuProps): ReactElement => {
                            onClick={toggleOpen}/>
             </div>
             {open && (
-                <div className="lg:hidden flex flex-col absolute left-0 right-0 mt-10 space-y-8 py-8 px-1 bg-slate-900">
+                <div className="lg:hidden flex flex-col absolute left-0 right-0 mt-10 space-y-8 py-8 px-1 bg-slate-900 z-30 bg-opacity-90">
                     {pages.map((page: string) => {
                         return (
                             <Link to={`/${page.toLowerCase()}`} key={page}
                                     id={page}
-                                  className="h-10 w-auto px-3 py-2 rounded-sm text-center text-primary-950 font-bold bg-accent-400"
+                                  className="h-10 w-auto px-3 py-2 rounded-sm text-center text-primary-950 font-bold bg-secondary-600"
                                   onClick={handleNavigate}>
                                 {page == "" ? "Home" : page}
                             </Link>

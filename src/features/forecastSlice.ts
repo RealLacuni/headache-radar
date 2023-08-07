@@ -1,8 +1,8 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
 
-const initialState: FullForecast = {
-    dailyForecastList: null,
-    hourlyDataList: null,
+const initialState: CompiledForecasts = {
+    dailyForecastList: [],
+    dateToHourlyData: new Map(),
     overallRisk: 0,
     tempRisk: 0,
     pressureRisk: 0,
@@ -11,18 +11,28 @@ const initialState: FullForecast = {
     location: ''
 }
 
-export const fetchForecastData = createAsyncThunk<FullForecast>(
+export const fetchForecastData = createAsyncThunk<CompiledForecasts>(
     'forecast/fetchForecastData',
     async () => {
-        const response = await fetch('/your-api-endpoint');
+        const response = await fetch('/your-api-endpoint'); //TODO: replace with actual endpoint
         return response.json();
     }
 )
+
 const forecastSlice = createSlice(
     {
         name: 'forecast',
         initialState,
-        reducers: {}
+        reducers: {
+            setForecastData: (state, action) => {
+                state = action.payload;
+                return state;
+            },
+            clearForecastData: (state) => {
+                state = initialState;
+                return state;
+            }
+        }
     })
 
 export default forecastSlice.reducer;
