@@ -32,8 +32,6 @@ const router = createBrowserRouter([
         ]
     }
 ]);
-//
-// const store = createStore;
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <RouterProvider router={router}/>
