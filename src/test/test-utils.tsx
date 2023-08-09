@@ -19,15 +19,12 @@ export function renderWithProviders(
     {
         preloadedState = {},
         // Automatically create a store instance if no store was passed in
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
         store = setupStore(preloadedState),
         ...renderOptions
     }: ExtendedRenderOptions = {}
 ) {
     function Wrapper({ children }: PropsWithChildren<NonNullable<unknown>>): React.ReactElement {
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
+
         return <Provider store={store}>{children}</Provider>
     }
 

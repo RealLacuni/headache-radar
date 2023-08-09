@@ -7,6 +7,8 @@ import Root from "./routes/Root.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
 import Home from "./routes/Home.tsx";
 import Forecast from "./routes/Forecast.tsx";
+import {Provider} from "react-redux";
+import store from "./store/store.ts";
 // import createStore from "./store/store.ts";
 // import {Provider} from "react-redux";
 
@@ -34,5 +36,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <RouterProvider router={router}/>
-        )
+    <Provider store={store}>
+        <RouterProvider router={router}/>
+    </Provider>
+)
