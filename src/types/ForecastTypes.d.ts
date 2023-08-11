@@ -15,9 +15,26 @@ duration: number;
 time: string;
 }
 
-type CompiledForecasts = {
+type normalizedDateToHourlyData = {
+    date: string;
+    hourlyData: HourlyData[];
+
+}
+
+type RawForecastData = {
     dailyForecastList: DailyForecast[];
     dateToHourlyData: Map<string, HourlyData[]>;
+    overallRisk: number;
+    tempRisk: number;
+    pressureRisk: number;
+    humidityRisk: number;
+    date: string;
+    location: string;
+}
+
+type NormalizedForecastData = {
+    dailyForecastList: DailyForecast[];
+    dateToHourlyData: normalizedDateToHourlyData[];
     overallRisk: number;
     tempRisk: number;
     pressureRisk: number;

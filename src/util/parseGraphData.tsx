@@ -1,5 +1,5 @@
 
-const parseGraphData = ({compiledForecasts}: { compiledForecasts: CompiledForecasts }) => {
+const parseGraphData = ({compiledForecasts}: { compiledForecasts: RawForecastData }) => {
     const dateToHourlyData = compiledForecasts.dateToHourlyData;
 
     const tempRiskGraphData = convertToGraphData(dateToHourlyData, "temperature", "hsl(0, 100%, 50%)");

@@ -32,7 +32,7 @@ import {useGetCurrentForecastQuery} from "../features/api/APISlice.ts";
 const Forecast = () => {
     const [zipCode, setZipCode] = useState("");
     const [submittedZipCode, setSubmittedZipCode] = useState("");
-    const params = {location: "", date: getDateFormatted(Date.now())}
+    const params = {location: zipCode, date: getDateFormatted(Date.now())}
     const {data, isError, isLoading} = useGetCurrentForecastQuery(params, {
         skip: submittedZipCode === "",
     });
@@ -46,7 +46,6 @@ const Forecast = () => {
 
     const handleZipCodeSubmit = async () => {
         setSubmittedZipCode(zipCode);
-        params.location = zipCode;
     }
 
     if (isError) return <div>An error has occurred!</div>

@@ -4,10 +4,10 @@ import Card from "../Card.tsx";
 import Graph from "./Graph.tsx";
 import parseGraphData from "../../util/parseGraphData.tsx";
 
-const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: CompiledForecasts }) => {
+const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: NormalizedForecastData }) => {
 
     //get all the dates from the dateToHourlyData map keys
-    const dates = Array.from(compiledForecasts.dateToHourlyData.keys());
+    const dates = compiledForecasts.dateToHourlyData.map((normalized => normalized.date));
     const tabs = dates.map(date => ({
         name: date,
         href: '#'

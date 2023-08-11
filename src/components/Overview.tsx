@@ -8,7 +8,7 @@ function classNames(...classes: string[]) {
 }
 
 type OverViewProps = {
-    compiledForecasts: CompiledForecasts;
+    compiledForecasts: NormalizedForecastData;
 }
 
 const Overview = (props : OverViewProps) => {
