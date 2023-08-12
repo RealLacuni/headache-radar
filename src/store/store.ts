@@ -18,11 +18,10 @@ const createStore = configureStore({
 
 export function setupStore(preloadedState?: PreloadedState<RootState>) {
     return configureStore({
-        reducer: { rootReducer,
+        reducer:  rootReducer,
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
-            preloadedState
-        },
+        preloadedState
     })
 }
 

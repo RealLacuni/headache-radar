@@ -14,10 +14,13 @@ const SearchInput = (props : SearchInputProps) => {
 
             <Card className={"flex flex-col lg:w-[50%] self-center h-72 items-center justify-center gap-4 bg-slate-800 rounded-xl mt-20"}>
                 <p className={"text-gray-300 text-lg"}>Start by entering your Zip Code:</p>
+
+                <form className={"flex flex-col items-center gap-4"}>
                 <Input label={"Zip Code"} placeholder={"90210"} onChange={props.handleZipCodeChange} className={"grow-0 w-60"}/>
-                <button type={"button"} onClick={props.handleZipCodeSubmit} value={"Search"} disabled={props.disabled}
+                <button type={"submit"} onClick={props.handleZipCodeSubmit} value={"Search"} disabled={props.disabled}
                         className={`grow-0 bg-blue-500 text-white font-bold py-2 px-4 rounded ${props.disabled ? 'bg-slate-700 text-slate-800' : 'hover:bg-blue-700' } `}> Search
                 </button>
+                </form>
 
             </Card>
     )

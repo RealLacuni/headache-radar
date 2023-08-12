@@ -4,14 +4,13 @@ import {ResponsiveLine} from "@nivo/line";
 const features = ["overview", "temperature", "pressure", "humidity"];
 
 const Graph = (props: GraphComponentProps) => {
-    console.log(props.graphData)
+    // console.log(props.graphData)
 
     const [feature, setFeature] = useState(features[0]); //temp, pressure, humidity
     const graphData = props.graphData.map((d) => d.get(props.date))
 
     return (
         <>
-
             <div className={"flex flex-col gap-4"}>
                 <div className={"flex flex-col lg:flex-row gap-4 p-2 lg:self-center bg-slate-500 rounded"}>
                     {/*TODO: Turn these buttons into a prettier component. Looks ugly on desktop now, sad*/}
@@ -26,10 +25,12 @@ const Graph = (props: GraphComponentProps) => {
             </div>
 
             <div className={"border-4 border-gray-900 bg-primary-800 mt-10 flex-none w-100 overflow-x-scroll lg:overflow-hidden -mx-6"}>
-                <div className={"h-96 w-[50rem]"}>
+                <div className={"h-96 w-[50rem]"} >
                     <ResponsiveLineGraph data={graphData as GraphData} feature={feature}/>
                 </div>
             </div>
+
+        {/*    Separate feature graphs here, maybe with popout menu so they can be minimized*/}
         </>
     )
 }
@@ -43,7 +44,7 @@ const ResponsiveLineGraph = (props: ResponseLineGraphProps) => {
     return (
         <ResponsiveLine
             data={data}
-            margin={{top: 50, right: 110, bottom: 50, left: 60}}
+            margin={{top: 30, right: 110, bottom:60, left: 70}}
             xScale={{type: 'point'}}
             yScale={{
                 type: 'linear',
@@ -61,15 +62,25 @@ const ResponsiveLineGraph = (props: ResponseLineGraphProps) => {
                 tickPadding: 5,
                 tickRotation: 0,
                 legend: 'Hour',
-                legendOffset: 36,
-                legendPosition: 'middle'
+                legendOffset: 52,
+                legendPosition: 'middle',
+                format: (value) => {
+                    const strArr : string[] = value.split(" ")
+                    return (
+                        <>
+                            {strArr.map(line => {
+                                return <tspan x="0" dy="1em" key={line}>{line}</tspan>;
+                            })}
+                        </>
+                    )
+                }
             }}
             axisLeft={{
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
                 legend: `${feature[0].toUpperCase() + feature.slice(1)}`,
-                legendOffset: -50,
+                legendOffset: -60,
                 legendPosition: 'middle'
             }}
             pointSize={10}
@@ -134,6 +145,7 @@ const ResponsiveLineGraph = (props: ResponseLineGraphProps) => {
 type GraphComponentProps = {
     graphData: GraphData,
     date: string,
+    refs: Refs,
 }
 
 type ResponseLineGraphProps = {

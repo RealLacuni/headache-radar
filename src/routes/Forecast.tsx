@@ -29,6 +29,7 @@ import {useGetCurrentForecastQuery} from "../features/api/APISlice.ts";
 // return compiledForecasts;
 // }
 
+
 const Forecast = () => {
     const [zipCode, setZipCode] = useState("");
     const [submittedZipCode, setSubmittedZipCode] = useState("");
@@ -37,8 +38,11 @@ const Forecast = () => {
         skip: submittedZipCode === "",
     });
 
-    console.log(data)
-
+    const refs : Refs = {
+        humidityRef: React.createRef(),
+        pressureRef: React.createRef(),
+        temperatureRef: React.createRef(),
+    }
 
     const handleZipCodeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setZipCode(event.target.value);
@@ -66,8 +70,8 @@ const Forecast = () => {
             }
             {(data != null && data.dateToHourlyData != null) &&
                 <div className={"flex flex-col gap-20"}>
-                    <Overview compiledForecasts={data}/>
-                    <ForecastGraphSection compiledForecasts={data}/>
+                    <Overview compiledForecasts={data} refs={refs}/>
+                    <ForecastGraphSection compiledForecasts={data} refs={refs}/>
                 </div>
 
             }

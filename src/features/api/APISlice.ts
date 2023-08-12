@@ -16,8 +16,7 @@ export const apiSlice = createApi({
                     date,
                     hourlyData: hourlyDatum,
                 }));
-                console.log(response)
-                console.log(response.dailyForecastList)
+                console.log(transformedDateToHourlyData);
 
                 return {
                     ...response,

@@ -15,7 +15,7 @@ duration: number;
 time: string;
 }
 
-type normalizedDateToHourlyData = {
+type NormalizedDateToHourlyData = {
     date: string;
     hourlyData: HourlyData[];
 
@@ -34,7 +34,7 @@ type RawForecastData = {
 
 type NormalizedForecastData = {
     dailyForecastList: DailyForecast[];
-    dateToHourlyData: normalizedDateToHourlyData[];
+    dateToHourlyData: NormalizedDateToHourlyData[];
     overallRisk: number;
     tempRisk: number;
     pressureRisk: number;
@@ -52,3 +52,7 @@ type FeatureGraphData = {
     }[];
 }
 type GraphData = featureGraphData[]
+
+type Refs = {
+    [key: string]: React.RefObject<HTMLDivElement>;
+}

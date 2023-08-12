@@ -4,7 +4,7 @@ import Card from "../Card.tsx";
 import Graph from "./Graph.tsx";
 import parseGraphData from "../../util/parseGraphData.tsx";
 
-const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: NormalizedForecastData }) => {
+const ForecastGraphSection = ({compiledForecasts, refs}: { compiledForecasts: NormalizedForecastData, refs: Refs }) => {
 
     //get all the dates from the dateToHourlyData map keys
     const dates = compiledForecasts.dateToHourlyData.map((normalized => normalized.date));
@@ -14,14 +14,14 @@ const ForecastGraphSection = ({compiledForecasts}: { compiledForecasts: Normaliz
     }));
     const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
-    const graphData = parseGraphData({compiledForecasts: compiledForecasts})
+    const graphData = parseGraphData({compiledForecasts})
 
     return (
         <section className={"flex flex-col gap-6 mb-20 px-2"}>
             <Card className={"rounded-xl"}>
                 <Tabs tabs={tabs} setSelectedTab={setSelectedTab} selectedTab={selectedTab}/>
                 {compiledForecasts.dateToHourlyData &&
-                    <Graph date={selectedTab.name} graphData={graphData}/>
+                    <Graph date={selectedTab.name} graphData={graphData} refs={refs}/>
                 }
             </Card>
         </section>

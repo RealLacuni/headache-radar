@@ -2,7 +2,7 @@ import React, { ReactElement, useState} from "react"
 import {Bars3Icon} from "@heroicons/react/24/solid";
 import {Link, useNavigate} from "react-router-dom";
 
-const pages: string[] = ["", "Forecast", "Projects", "Contact"];
+const pages: string[] = ["", "Forecast",];
 
 
 const MobileMenu = (props: MobileMenuProps): ReactElement => {
