@@ -1,11 +1,10 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 
-
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const apiSlice = createApi({
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/api',
+        baseUrl: `${API_BASE_URL}/api`,
     }),
     endpoints: (builder) => ({
         getCurrentForecast: builder.query<NormalizedForecastData, { location: string; date: string }>({
@@ -16,7 +15,7 @@ export const apiSlice = createApi({
                     date,
                     hourlyData: hourlyDatum,
                 }));
-                console.log(transformedDateToHourlyData);
+                // console.log(transformedDateToHourlyData);
 
                 return {
                     ...response,

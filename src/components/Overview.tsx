@@ -59,14 +59,13 @@ const Overview = (props : OverViewProps) => {
                             </p>
                             <div className="absolute bottom-0 inset-x-0 bg-gray-800 px-4 py-4 sm:px-6">
                                 <div className="text-sm">
-                                    <a href="#" className="font-medium text-indigo-200 hover:text-indigo-500"    onClick={(e) => {
+                                    <a href="#" className="font-medium text-indigo-200 hover:text-indigo-500 line-through"    onClick={(e) => {
                                         e.preventDefault(); // To prevent the default behavior of the anchor tag
-                                        console.log(`${item.name.toLowerCase()}Ref`)
-                                        console.log(props.refs)
+                                        // console.log(`${item.name.toLowerCase()}Ref`)
+                                        // console.log(props.refs)
                                         scrollToRef(props.refs["humidityRef"]);
                                     }}>
-                                        {' '}
-                                        View graph<span className="sr-only"> {item.name} stats</span>
+                                        View graph <span className={"text-red-500 font-normal text-xs"}>TBD</span> <span className="sr-only"> {item.name} stats</span>
                                     </a>
                                 </div>
                             </div>
@@ -80,7 +79,7 @@ const Overview = (props : OverViewProps) => {
 
 const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref == null || ref.current == null) {
-        console.log("Error: ref is null")
+        // console.log("Error: ref is null")
         return;
     }
     ref.current.scrollIntoView({behavior: 'smooth'});

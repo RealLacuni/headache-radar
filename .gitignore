@@ -312,3 +312,5 @@ sketch
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,intellij,react,node
+/.env.production
+/.env.development

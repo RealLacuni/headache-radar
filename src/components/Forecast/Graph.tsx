@@ -25,7 +25,7 @@ const Graph = (props: GraphComponentProps) => {
             </div>
 
             <div className={"border-4 border-gray-900 bg-primary-800 mt-10 flex-none w-100 overflow-x-scroll lg:overflow-hidden -mx-6"}>
-                <div className={"h-96 w-[50rem]"} >
+                <div className={"h-96 w-[50rem] lg:p-4"} >
                     <ResponsiveLineGraph data={graphData as GraphData} feature={feature}/>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import {ArrowRightIcon} from "@heroicons/react/24/solid";
 const Home = () => {
     return (
         <div
-            className={"flex flex-col bg-gradient-to-b from-slate-950 to-slate-900 via-primary-800 via-40% to-70% font-open-sans text-slate-200 lg:px-2"}>
+            className={"flex flex-col bg-gradient-to-b from-slate-950 to-slate-900 via-primary-800 via-40% to-70% font-open-sans text-slate-200 "}>
             <Hero/>
             <a
                 href={"/forecast"}

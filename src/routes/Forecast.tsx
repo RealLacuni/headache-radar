@@ -48,7 +48,8 @@ const Forecast = () => {
         setZipCode(event.target.value);
     }
 
-    const handleZipCodeSubmit = async () => {
+    const handleZipCodeSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
         setSubmittedZipCode(zipCode);
     }
 
